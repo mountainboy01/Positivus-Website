@@ -1,4 +1,7 @@
-*{padding: 0; margin:0; box-sizing: border-box; font-family: sans-serif; text-decoration: none; list-style: none;}
+/************************FONTS***********************************/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{padding: 0; margin:0; box-sizing: border-box; text-decoration: none; list-style: none;}
 
 :root{
 	--primary-color:#B9FF66;
@@ -9,6 +12,10 @@
 	--max-width: 1100px;
 	--p:40px 20px;
 	--px:0px 20px;
+}
+
+body{
+	  font-family: "Poppins", sans-serif;
 }
 
 .container{
@@ -154,7 +161,7 @@
 
 .hero .row .col .text h1{
 	font-size: 3rem;
-	max-width: 400px;
+	max-width: 500px;
 	line-height: 3.8rem;
 	margin-bottom: 30px;
 	color:var(--secondary-800);
@@ -607,7 +614,7 @@
     position: relative;
     padding: 30px 30px;
     border-right: 1px solid var(--white-color);
-    height: 200px;
+    height: 250px;
 }
 
 .case-studies .row .swiper .swiper-slide:last-child{
@@ -677,5 +684,276 @@
 }
 }
 
-
 /******************************CASE STUDIES SECTION*************************/
+
+/******************************OUR WORK SECTION*************************/
+.our-work{
+	width: 100%;
+	background: var(--white-color);
+	padding: var(--p);
+}
+
+.our-work .title{
+	display: flex;
+	gap:20px;
+	align-items: center;
+	margin-bottom: 40px;
+}
+
+.our-work .title h1{
+	background: var(--primary-color);
+	font-size: 2rem;
+	padding: 5px 5px;
+	border-radius: 5px;
+	color:var(--secondary-800);
+}
+
+.our-work .title p{
+	max-width: 500px;
+	color:var(--secondary-800);
+	line-height: 1.3rem;
+}
+
+.our-work .row .accordian .accordian-item{
+	margin-bottom: 30px;
+	border-radius: 30px;
+	border:1px solid var(--secondary-800);
+	background: var(--gray-color);
+	padding: 30px;
+	overflow: hidden;
+}
+
+.our-work .row .accordian .accordian-item .accordian-title{
+	position: relative;
+}
+
+.our-work .row .accordian .accordian-item .accordian-title::before{
+	content: "\2b";
+	font-family: Fontawesome;
+	position: absolute;
+	top:50%;
+	right: 10px;
+	transform: translateY(-50%);
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+	border:1px solid var(--secondary-800);
+	background: var(--white-color);
+	text-align: center;
+	line-height: 50px;
+	font-weight: 500;
+	cursor: pointer;
+}
+
+.our-work .row .accordian .accordian-item .accordian-title .text{
+	display: flex;
+	align-items: center;
+	gap:20px;
+}
+
+.our-work .row .accordian .accordian-item .accordian-title .text span{
+	font-size: 2.5rem;
+	font-weight: 700;
+}
+
+.our-work .row .accordian .accordian-item .accordian-title .text h2{
+	font-size: 1.2rem;
+	font-weight: 500;
+}
+
+.our-work .row .accordian .accordian-item .accordian-content{
+	padding: 15px 0px;
+	border-top: 1px solid var(--secondary-800);
+	display: none;
+	margin-top: 20px;
+}
+
+.our-work .row .accordian .accordian-item.active{
+	 background: var(--primary-color);
+	 box-shadow: 0px 3px 1px var(--secondary-800);
+}
+
+.our-work .row .accordian .accordian-item.active .accordian-content{
+	 display: block;
+	 background: var(--primary-color);
+}
+
+.our-work .row .accordian .accordian-item.active .accordian-title::before{
+	content: '\f068';
+}
+
+.our-work .row .accordian .accordian-item .accordian-content p{
+	font-size: 1rem;
+	line-height: 1.5rem;
+	color:var(--secondary-800);
+}
+
+
+@media only screen and (max-width: 768px){
+.our-work .title{
+	flex-direction: column;
+	gap:20px;
+	align-items: center;
+	text-align: center;
+}
+
+.our-work .row .accordian .accordian-item{
+	border-radius: 50px;
+}
+
+.our-work .row .accordian .accordian-item .accordian-title .text{
+	gap:30px;
+}
+
+.our-work .row .accordian .accordian-item .accordian-title .text span{
+	font-size: 2.3rem;
+}
+
+.our-work .row .accordian .accordian-item .accordian-title .text h2{
+	font-size: 1.2rem;
+}
+
+}
+
+@media only screen and (max-width: 425px){
+.our-work .row .accordian .accordian-item .accordian-title .text{
+   gap:20px;
+   max-width: 200px;
+}
+
+.our-work .row .accordian .accordian-item .accordian-title .text span{
+	font-size: 1.8rem;
+}
+
+.our-work .row .accordian .accordian-item .accordian-title .text h2{
+	font-size: 0.9rem;
+	font-weight: 700;
+}
+
+.our-work .row .accordian .accordian-item .accordian-content p{
+	font-size: 0.8rem;
+	line-height: 1.3rem;
+	text-align: justify;
+}
+
+.our-work .row .accordian .accordian-item .accordian-title::before{
+	height: 40px;
+	width: 40px;
+	line-height: 40px;
+}
+}
+/******************************OUR WORK SECTION*************************/
+
+/******************************OUR TEAM SECTION*************************/
+.our-team{
+	width: 100%;
+	background: var(--white-color);
+	padding: var(--p);
+}
+
+.our-team .title{
+	display: flex;
+	gap:20px;
+	align-items: center;
+	margin-bottom: 40px;
+}
+
+.our-team .title h1{
+	background: var(--primary-color);
+	font-size: 2rem;
+	padding: 5px 5px;
+	border-radius: 5px;
+	color:var(--secondary-800);
+}
+
+.our-team .title p{
+	max-width: 500px;
+	color:var(--secondary-800);
+	line-height: 1.3rem;
+}
+
+.our-team .row{
+	display: grid;
+	grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+	grid-gap: 30px;
+}
+
+.our-team .row .col .team-item{
+	background: var(--white-color);
+	border:1px solid var(--secondary-800);
+	border-radius: 20px;
+	padding: 30px;
+	position: relative;
+	height: 300px;
+	transition: all 0.5s;
+}
+
+.our-team .row .col .team-item:hover{
+	box-shadow: 0px 4px 1px var(--secondary-800);
+}
+
+.our-team .row .col .team-item .team-header{
+	display: flex;
+	gap:20px;
+	align-items: flex-end;
+	margin-bottom: 30px;
+}
+
+.our-team .row .col .team-item .team-header .team-title{
+	color: var(--secondary-800);
+}
+
+.our-team .row .col .team-item .team-header .team-title h1{
+	font-size: 1.2rem;
+	margin-bottom: 5px;
+}
+
+.our-team .row .col .team-item .team-header .team-title span{
+	font-size: 0.9rem;
+}
+
+.our-team .row .col .team-item .team-header .social-link{
+	position: absolute;
+	top:20px;
+	right: 30px;
+	height: 40px;
+	width: 40px;
+	border-radius: 50%;
+	background: var(--secondary-800);
+	text-align: center;
+	line-height: 40px;
+	cursor: pointer;
+	transition: all 0.5s; 
+}
+
+.our-team .row .col .team-item:hover .social-link {
+	background: var(--primary-color);
+}
+
+.our-team .row .col .team-item:hover .social-link a i{
+	color:var(--secondary-800);
+}
+
+.our-team .row .col .team-item .team-header .social-link a{
+	color:var(--primary-color);
+}
+
+.our-team .row .col .team-item .text p{
+	font-size: 0.9rem;
+	line-height: 1.3rem;
+	color:var(--secondary-800);
+	text-align: justify;
+}
+
+
+@media only screen and (max-width: 768px){
+.our-team .title{
+	flex-direction: column;
+	gap:20px;
+	align-items: center;
+	text-align: center;
+}
+}
+
+
+/******************************OUR TEAM SECTION*************************/
