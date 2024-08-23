@@ -15,7 +15,7 @@ toggleIcon.addEventListener("click",()=>{
     jQuery(document).ready(function () {
                 var clientSwiper = new Swiper('.company-swiper', {
                     loop: true,
-                    speed: 200,
+                    speed: 100,
                     autoplay: true,
                     navigation: {
                         nextEl: '.swiper-button-next.clients',
