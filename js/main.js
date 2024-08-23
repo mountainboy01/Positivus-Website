@@ -75,6 +75,29 @@ toggleIcon.addEventListener("click",()=>{
          });
 }); 
 
-
-
 /************************COMPANY SWIPER***************************/
+
+/************************CASE STUDIES SWIPER***************************/
+    var swiper = new Swiper(".caseSwiper", {
+      slidesPerView: "auto",
+      spaceBetween: 10,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: false,
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 1,
+          spaceBetween: 10,
+        },
+        768: {
+          slidesPerView: 3,
+          spaceBetween: 30,
+        },
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 30,
+        },
+      },
+    });
+/************************CASE STUDIES SWIPER***************************/

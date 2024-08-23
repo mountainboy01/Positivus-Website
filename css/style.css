@@ -560,3 +560,120 @@
 }
 
 /******************************PERPOSAL SECTION*************************/
+
+/******************************CASE STUDIES SECTION*************************/
+.case-studies{
+	width: 100%;
+	background: var(--white-color);
+	padding: var(--p);
+}
+
+.case-studies .title{
+	display: flex;
+	gap:20px;
+	align-items: center;
+	margin-bottom: 40px;
+}
+
+.case-studies .title h1{
+	background: var(--primary-color);
+	font-size: 2rem;
+	padding: 5px 5px;
+	border-radius: 5px;
+	color:var(--secondary-800);
+}
+
+.case-studies .title p{
+	max-width: 500px;
+	color:var(--secondary-800);
+	line-height: 1.3rem;
+}
+
+.case-studies .row{
+	background: var(--secondary-800);
+	padding: 40px 30px;
+	border-radius: 20px;
+}
+
+.case-studies .row .swiper{
+	width: 100%;
+    height: 100%;
+}
+
+.case-studies .row .swiper .swiper-slide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 30px 30px;
+    border-right: 1px solid var(--white-color);
+}
+
+.case-studies .row .swiper .swiper-slide:last-child{
+	border: none;
+}
+
+.case-studies .row .swiper .swiper-slide .case-item .case-text p{
+	color:var(--white-color);
+	font-size: 0.9rem;
+	line-height: 1.3rem;
+	margin-bottom: 30px;
+}
+
+.case-studies .row .swiper .swiper-slide .case-item .case-link a{
+	display: flex;
+	align-items: center;
+	gap:8px;
+}
+
+.case-studies .row .swiper .swiper-slide .case-item .case-link a img{
+	height: 15px;
+}
+
+.case-studies .row .swiper .swiper-slide .case-item .case-link a span{
+	color:var(--primary-color);
+	font-size: 0.9rem;
+}
+
+@media only screen and (max-width: 992px){
+.case-studies .row{
+	background: var(--white-color);
+}
+
+.case-studies .row{
+	padding: 0px 0px;
+}
+
+.case-studies .row .swiper .swiper-wraper{
+	padding: 0;
+	margin:0;
+}
+
+.case-studies .row .swiper .swiper-slide{
+	border:none;
+	background: var(--secondary-800);
+	border-radius: 20px;
+}
+}
+
+@media only screen and (max-width: 768px){
+.case-studies .title{
+	flex-direction: column;
+	gap:20px;
+	align-items: center;
+	text-align: center;
+}
+
+
+.case-studies .row .swiper .swiper-slide{
+	flex-basis: 250px;
+	padding: 40px 20px;
+}
+
+.case-studies .row .swiper .swiper-slide .case-item .case-text p{
+	text-align: justify;
+}
+}
+
+
+/******************************CASE STUDIES SECTION*************************/
