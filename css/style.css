@@ -607,6 +607,7 @@
     position: relative;
     padding: 30px 30px;
     border-right: 1px solid var(--white-color);
+    height: 200px;
 }
 
 .case-studies .row .swiper .swiper-slide:last-child{
@@ -668,6 +669,7 @@
 .case-studies .row .swiper .swiper-slide{
 	flex-basis: 250px;
 	padding: 40px 20px;
+	height: 220px;
 }
 
 .case-studies .row .swiper .swiper-slide .case-item .case-text p{
