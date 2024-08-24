@@ -125,8 +125,23 @@ toggleIcon.addEventListener("click",()=>{
                         }
                 });
             });
-          
-
 
 /************************OUR WORK ACCORDIAN***************************/
 
+/************************TESTAMONIAL SWIPER***************************/
+     var swiper = new Swiper(".testamonialSwiper", {
+      loop:true,
+      autoplay:true,
+      cssMode: true,
+      navigation: {
+        nextEl: ".swiper-next",
+        prevEl: ".swiper-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      mousewheel: true,
+      keyboard: true,
+    });
+/************************TESTAMONIAL SWIPER***************************/
