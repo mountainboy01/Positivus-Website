@@ -79,6 +79,7 @@ toggleIcon.addEventListener("click",()=>{
 
 /************************CASE STUDIES SWIPER***************************/
     var swiper = new Swiper(".caseSwiper", {
+      autoplay:true,
       slidesPerView: "auto",
       spaceBetween: 10,
       pagination: {

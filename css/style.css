@@ -387,8 +387,8 @@ body{
 {
     background: var(--secondary-800);
     display: inline-block;
-    height: 30px;
-    width: 30px;
+    height: 40px;
+    width: 40px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -405,8 +405,8 @@ body{
 .services .row .col:nth-child(5) .service-item .text .link a .arrow{
     background: var(--secondary-800);
     display: inline-block;
-    height: 30px;
-    width: 30px;
+    height: 40px;
+    width: 40px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -424,8 +424,8 @@ body{
 {
     background: var(--white-color);
     display: inline-block;
-    height: 30px;
-    width: 30px;
+    height: 40px;
+    width: 40px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -504,17 +504,16 @@ body{
 	align-items: center;
 	gap:30px;
 	border-radius: 20px;
+	box-shadow: 3px 3px 10px rgba(0,0,0,0.15);
 }
 
 .perposal .row .col{
 	flex:1;
 	position: relative;
-	padding: 0;
-	margin: 0;
 }
 
 .perposal .row .col-1{
-	padding: 30px 30px;
+	padding: 30px;
 }
 
 .perposal .row .col-1 h1{
@@ -536,6 +535,7 @@ body{
 	border-radius: 10px;
 	transition: all 0.5s;
 	text-align: center;
+	display: inline-block;
 }
 
 .perposal .row .col-1 .link a:hover{
@@ -675,8 +675,8 @@ body{
 
 .case-studies .row .swiper .swiper-slide{
 	flex-basis: 280px;
-	padding: 40px 20px;
-	height: 220px;
+	padding: 40px 30px;
+	height: 300px;
 }
 
 .case-studies .row .swiper .swiper-slide .case-item .case-text p{
@@ -878,18 +878,18 @@ body{
 	grid-gap: 30px;
 }
 
-.our-team .row .col .team-item{
+.our-team .row .col{
 	background: var(--white-color);
 	border:1px solid var(--secondary-800);
 	border-radius: 20px;
-	padding: 30px;
+	padding: 40px;
 	position: relative;
-	height: 300px;
 	transition: all 0.5s;
+	box-shadow: 0px 4px 1px var(--secondary-800);
 }
 
-.our-team .row .col .team-item:hover{
-	box-shadow: 0px 4px 1px var(--secondary-800);
+.our-team .row .col:hover{
+	box-shadow: 0px 4px 1px var(--primary-color);
 }
 
 .our-team .row .col .team-item .team-header{
@@ -926,11 +926,11 @@ body{
 	transition: all 0.5s; 
 }
 
-.our-team .row .col .team-item:hover .social-link {
+.our-team .row .col:hover > .team-item .team-header .social-link {
 	background: var(--primary-color);
 }
 
-.our-team .row .col .team-item:hover .social-link a i{
+.our-team .row .col:hover .social-link a i{
 	color:var(--secondary-800);
 }
 
@@ -939,8 +939,8 @@ body{
 }
 
 .our-team .row .col .team-item .text p{
-	font-size: 0.9rem;
-	line-height: 1.3rem;
+	font-size: 1rem;
+	line-height: 1.5rem;
 	color:var(--secondary-800);
 	text-align: justify;
 }
@@ -952,6 +952,10 @@ body{
 	gap:20px;
 	align-items: center;
 	text-align: center;
+}
+
+.our-team .row .col{
+	padding: 35px;
 }
 }
 
