@@ -132,6 +132,7 @@ toggleIcon.addEventListener("click",()=>{
      var swiper = new Swiper(".testamonialSwiper", {
       loop:true,
       autoplay:true,
+      speed:3000,
       cssMode: true,
       navigation: {
         nextEl: ".swiper-next",
