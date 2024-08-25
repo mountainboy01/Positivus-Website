@@ -1159,7 +1159,7 @@ body{
 .contact-us{
 	width: 100%;
 	background: var(--white-color);
-	padding: var(--p);
+	padding: var(--p-1);
 }
 
 .contact-us .title{
