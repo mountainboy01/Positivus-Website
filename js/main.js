@@ -12,68 +12,41 @@ toggleIcon.addEventListener("click",()=>{
 /************************NAVBAR***************************/
 
 /************************COMPANY SWIPER***************************/
-    jQuery(document).ready(function () {
-                var clientSwiper = new Swiper('.company-swiper', {
-                    loop: true,
-                    speed: 100,
-                    autoplay: true,
-                    navigation: {
-                        nextEl: '.swiper-button-next.clients',
-                        prevEl: '.swiper-button-prev.clients',
-                    },
-                    pagination: {
-                        el: '.swiper-pagination.clients',
-                        clickable: true,
-                    },
-					
-					breakpoints: {
-               991: {
-                    noSwiping: false,
-                    allowSlidePrev: false,
-                    allowSlideNext: false,
-                    slidesPerView: 7,
-                    spaceBetween: 20,
-                  
-               
-                },
-				
-				768: {
-                    noSwiping: true,
-                    allowSlidePrev: true,
-                    allowSlideNext: true,
-                    slidesPerView: 5,
-                    spaceBetween: 20,
-                  
-                  
-                },
-				
-                576: {
-                    noSwiping: true,
-                    allowSlidePrev: true,
-                    allowSlideNext: true,
-                    slidesPerView: 4,
-                    spaceBetween: 20, 
-                },
+     var companySwiper = new Swiper(".companySwiper", {
+      loop:true,
+      autoplay:true,
+      speed:1000,
+      cssMode: true,
+      navigation: {
+        nextEl: ".swiper-next",
+        prevEl: ".swiper-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      breakpoints: {
+      	340: {
+          slidesPerView: 2,
+          spaceBetween: 10,
+        },
 
-                300: {
-                    noSwiping: true,
-                    allowSlidePrev: true,
-                    allowSlideNext: true,
-                    slidesPerView: 3,
-                    spaceBetween: 15, 
-                },
-
-                 200: {
-                    noSwiping: true,
-                    allowSlidePrev: true,
-                    allowSlideNext: true,
-                    slidesPerView: 1,
-                    spaceBetween: 0, 
-                }
-            }
-			
-         });
-}); 
+        640: {
+          slidesPerView: 3,
+          spaceBetween: 10,
+        },
+        768: {
+          slidesPerView: 4,
+          spaceBetween: 20,
+        },
+        1024: {
+          slidesPerView: 5,
+          spaceBetween: 20,
+        },
+      },
+      mousewheel: true,
+      keyboard: true,
+    });
 
 /************************COMPANY SWIPER***************************/
 

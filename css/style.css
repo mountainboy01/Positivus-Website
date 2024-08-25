@@ -107,7 +107,7 @@ body{
 .navbar .nav-items nav ul{
 	position: absolute;
 	left: 0;
-	top: 81px;
+	top: 80px;
 	width: 100%;
 	max-height: 0vh;
 	visibility: hidden;
@@ -255,31 +255,17 @@ body{
 	padding: var(--p);
 }
 
-.company .company-swiper{
-	overflow: hidden;
+
+.company .swiper .swiper-wrapper .swiper-slide .img{
+	display: flex;
+	justify-content: center;
 }
 
-.company .company-swiper .swiper-wrapper{
-	max-width: 1000px;
-	margin:0px auto;
+.company .swiper .swiper-wrapper .swiper-slide .img img{
+	height: 45px;
+	filter:grayscale(100%);
 }
 
-.company .swiper-slide{
-	width: 300px;
-	height: 100px;
-}
-
-.company .swiper-slide .company-img{
-   height: 100px;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-}
-
-.company .swiper-slide .company-img img{
-	width: 100px;
-	filter: grayscale(100%);
-}
 
 /******************************COMPANY SECTION*************************/
 
@@ -462,6 +448,7 @@ body{
 }
 
 
+/*********************** MEDIA QUERY *************************/
 
 @media only screen and (max-width: 768px){
 .services .title{
@@ -496,6 +483,8 @@ body{
 	display: none;
 }
 }
+
+/*********************** MEDIA QUERY *************************/
 
 /******************************SERVICES SECTION*************************/
 
@@ -558,7 +547,7 @@ body{
 	justify-content: center;
 }
 
-
+/*********************** MEDIA QUERY *************************/
 
 @media only screen and (max-width: 768px){
 .perposal .row{
@@ -573,6 +562,8 @@ body{
 	display: none;
 }	
 }
+
+/*********************** MEDIA QUERY *************************/
 
 /******************************PERPOSAL SECTION*************************/
 
@@ -651,6 +642,8 @@ body{
 	font-size: 0.9rem;
 }
 
+/*********************** MEDIA QUERY *************************/
+
 @media only screen and (max-width: 992px){
 .case-studies .row{
 	background: var(--white-color);
@@ -691,6 +684,8 @@ body{
 	text-align: justify;
 }
 }
+
+/*********************** MEDIA QUERY *************************/
 
 /******************************CASE STUDIES SECTION*************************/
 
@@ -796,6 +791,7 @@ body{
 	color:var(--secondary-800);
 }
 
+/*********************** MEDIA QUERY *************************/
 
 @media only screen and (max-width: 768px){
 .our-work .title{
@@ -822,6 +818,8 @@ body{
 }
 
 }
+
+/*********************** MEDIA QUERY *************************/
 
 @media only screen and (max-width: 425px){
 .our-work .row .accordian .accordian-item .accordian-title .text{
@@ -850,6 +848,9 @@ body{
 	line-height: 40px;
 }
 }
+
+/*********************** MEDIA QUERY *************************/
+
 /******************************OUR WORK SECTION*************************/
 
 /******************************OUR TEAM SECTION*************************/
@@ -978,6 +979,7 @@ body{
 	color:var(--secondary-800);
 }
 
+/*********************** MEDIA QUERY *************************/
 
 @media only screen and (max-width: 768px){
 .our-team .title{
@@ -1002,6 +1004,7 @@ body{
 }
 }
 
+/*********************** MEDIA QUERY *************************/
 
 /******************************OUR TEAM SECTION*************************/
 
@@ -1127,6 +1130,8 @@ body{
 }
 
 
+/*********************** MEDIA QUERY *************************/
+
 @media only screen and (max-width: 768px){
 .testamonial .title{
 	flex-direction: column;
@@ -1144,6 +1149,8 @@ body{
 }
 }
 
+/*********************** MEDIA QUERY *************************/
+
 @media only screen and (max-width: 425px){
 .testamonial .row .testamonialSwiper .swiper-next{
 	left: 65%;
@@ -1153,6 +1160,9 @@ body{
     transform: translate(20px , 10px);
 }
 }
+
+/*********************** MEDIA QUERY *************************/
+
 /******************************TESTAMONIAL SECTION*************************/
 
 /******************************CONTACT SECTION*************************/
@@ -1281,6 +1291,7 @@ body{
     height: 550px;
 }
 
+/*********************** MEDIA QUERY *************************/
 
 @media only screen and (max-width: 768px){
 .contact-us .title{
@@ -1299,6 +1310,8 @@ body{
 	display: none;
 }
 }
+
+/*********************** MEDIA QUERY *************************/
 
 /******************************CONTACT SECTION*************************/
 
@@ -1353,16 +1366,14 @@ body{
 }
 
 .footer .row .col .social-links a{
-	display: block;
+	display: flex;
 	align-items: center;
-	height: 40px;
-	width: 40px;
+	justify-content: center;
+	height: 45px;
+	width: 45px;
 	border-radius: 50%;
 	background: var(--white-color);
 	color:var(--secondary-800);
-	text-align: center;
-	line-height: 40px;
-	transition: all 0.5s;
 }
 
 .footer .row .col .social-links a i{
@@ -1444,6 +1455,8 @@ body{
 }
 
 
+/*********************** MEDIA QUERY *************************/
+
 @media only screen and (max-width: 992px){
 .footer .row{
 	flex-direction: column;
@@ -1466,6 +1479,10 @@ body{
 }
 }
 
+
+
+/*********************** MEDIA QUERY *************************/
+
 @media only screen and (max-width: 576px){
 .footer .row .col ul{
 	gap:10px;
@@ -1484,6 +1501,8 @@ body{
 	gap:30px;
 }
 }
+
+/*********************** MEDIA QUERY *************************/
 
 /******************************FOOTER SECTION*************************/
 
@@ -1516,6 +1535,8 @@ body{
 .sub-footer .text a:hover{
 	color:var(--primary-color);
 }
+
+/*********************** MEDIA QUERY *************************/
 
 @media only screen and (max-width: 768px){
 .sub-footer .text{
